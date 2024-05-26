@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Updating DOM with jQuery and CSS</title>
+<!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Include external CSS file -->
+<link rel="stylesheet" href="stylesk.css">
+</head>
+<body>
+
+<div id="content">
+    <p id="paragraph">This is the initial content.</p>
+    <button id="updateButton">Update Content</button>
+</div>
+
+<script>
+// jQuery code to update the DOM
+$(document).ready(function() {
+    // Event listener for the button click
+    $("#updateButton").click(function() {
+        // Update the content of the paragraph
+        $("#paragraph").text("This is the updated content.");
+        // Add a CSS class to the paragraph
+        $("#paragraph").addClass("updated");
+    });
+});
+</script>
+
+</body>
+</html>
